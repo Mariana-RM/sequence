@@ -1,0 +1,24 @@
+<section class="section-card mt-5 mt-lg-0">
+  <div class="card shadow mb-2">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-white text-uppercase"> Serie numérica</h6>
+    </div>
+    <div class="card-body">
+        <div class="row">
+          <div class="mt-3 mb-3">
+            <h6>Serie Numerica Triangular: {{serieTriangular}}</h6>
+            <h6>Serie Numerica Fibonacci: {{serieFibonacci}}</h6>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+              <app-request-number (onIndex)="getIndex($event)"></app-request-number>
+            </div>
+            <div class="col-md-9 border-left">
+              <app-get-sequence [indexSerie]="indexSerie"></app-get-sequence>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>

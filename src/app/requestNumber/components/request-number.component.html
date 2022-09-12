@@ -1,0 +1,27 @@
+<div class="row mb-2">
+  <div class="col-md-12">
+    <p>Inserta la posición de la serie</p>
+    <form [formGroup]="formSequence">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="txtNumber"
+              placeholder=""
+              formControlName="txtNumber"
+              name="txtNumber"
+            />
+          </div>
+
+        </div>
+        <div class="col-md-12 mt-3">
+          <button  class="btn btn btn-primary btn-fill pull-right" type="button"  (click)="onSubmit()">
+            <span>Obtener valor</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

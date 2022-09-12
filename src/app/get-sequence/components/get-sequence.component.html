@@ -1,0 +1,22 @@
+<section class="section-card mt-5 mt-lg-0">
+<div>
+  <p>¿{{indexSerie}} es número primo?:  {{isPrimeNumber(indexSerie)}}</p>
+  <p>{{isPrime}}</p>
+  <hr>
+  <p>Visualizar serie fibonacci: {{ makeFibonacciSequence(indexSerie)}}</p>
+  <li class="list-group-item"  *ngFor="let item of serieFibonacci; let i = index">
+    <div>
+      <label class="custom-control-label" for="{{i}}">{{i}} - {{item}}</label>
+    </div>
+  </li>
+  <hr>
+  <p>Visualizar serie triangular: {{makeTriangularNumberSequence(indexSerie)}}</p>
+  <li class="list-group-item"  *ngFor="let item of serieTriangular; let i = index">
+    <div>
+      <label class="custom-control-label" for="{{i}}">{{i}} - {{item}}</label>
+    </div>
+  </li>
+</div>
+</section>
+
+
